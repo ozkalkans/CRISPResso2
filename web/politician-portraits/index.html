@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>This Politician Does Not Exist</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>This Politician Does Not Exist</h1>
+      <p class="subtitle">A playful generator that invents entirely fictional public servants every time you refresh.</p>
+      <div class="cta">
+        <button id="refresh-button" class="primary">Generate another face</button>
+        <p class="note">Images are pulled from <a href="https://thispersondoesnotexist.com" target="_blank" rel="noreferrer">thispersondoesnotexist.com</a>; any resemblance to real people is coincidental.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container layout">
+    <section class="card portrait-card">
+      <div class="portrait-frame">
+        <img id="portrait" alt="AI generated portrait of a fictional politician" />
+      </div>
+    </section>
+
+    <section class="card details-card">
+      <div class="identity">
+        <p class="eyebrow" id="role"></p>
+        <h2 id="name"></h2>
+        <p class="tagline" id="tagline"></p>
+      </div>
+
+      <div class="bio">
+        <h3>Platform highlights</h3>
+        <ul id="issues"></ul>
+      </div>
+
+        <div class="footnote">
+          <p>Everything on this page is synthetic—names, offices, quotes, and faces. Reload or tap the button above to meet someone new.</p>
+        </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>Built as a lightweight demo inspired by thispersondoesnotexist.com.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
